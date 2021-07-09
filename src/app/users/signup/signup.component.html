@@ -1,0 +1,26 @@
+<p>signup works!</p>
+<button (click)='getName(myName)'>Click here!</button>
+
+<div [ngSwitch]="color">
+    <h1 *ngSwitchCase="'red'">
+        red
+    </h1>
+    <h1 *ngSwitchCase="'green'">
+        green
+    </h1>
+    <h1 *ngSwitchCase="'yellow'">
+        yellow
+    </h1>
+</div>
+
+<table border="1">
+    <tr>
+        <td>Name</td>
+        <td>Age</td>
+    </tr>
+    <tr *ngFor = "let item of data">
+        <td>{{item.Name}}</td>
+        <td>{{item.age}}</td>
+
+    </tr>
+</table>
